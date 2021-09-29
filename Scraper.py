@@ -13,7 +13,7 @@ soup = BeautifulSoup(page.content, 'html.parser') #Pass page content to Beautifu
 
 table = soup.find('table') #Finds first table, no idea how to acess other tables on page
 
-table_rows = table.find_all('tr') # Find table rows
+table_rows = table.find_all('tr') # Find table row
 
 for tr in table_rows:
     td = tr.find_all('td') # 'td' - table data cells
