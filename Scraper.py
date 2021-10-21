@@ -25,5 +25,5 @@ for tr in table_rows:
 
 
 ##print(soup.find_all(string=["Knight", "Huntress", "Priest"]))
-##print(soup.prettify()) //Readable text
+##print(soup.prettify()) //Readable text##
 
