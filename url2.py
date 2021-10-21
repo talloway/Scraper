@@ -33,7 +33,7 @@ def toTable (content):
         inter.append(row)
     
     
-    inter.remove([]) ##Empty list ()/._.)/
+    inter.remove([]) ##Remove empty list entry at beginning and end
 
 
     ##Clean table data
@@ -70,7 +70,7 @@ def combineTable (temp, final):
             result = temp[index + 1][0]
             final[finalIndex + 1].append(result)
 
-
+        
         elif rider not in final and index % 2 == 0:
             final.append(rider)
             result = temp[index + 1][0]
@@ -84,12 +84,13 @@ def combineTable (temp, final):
 
 
 
+######## To Do #########
+# Read urls from text file
+# Error handling for name discrepancies
+# Add qualifying, points
 
+## Driver code ###
 
-## Driver code ####
-
-
-## Read in urls from text file fstream
 urls = ["https://racerxonline.com/results/2021/salt-lake-city-2/450sx", "https://racerxonline.com/results/2021/salt-lake-city-1/450sx"] ## race result urls
 
 finalResults = []
