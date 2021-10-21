@@ -63,16 +63,18 @@ def combineTable (temp, final):
 
         if rider in final and index % 2 == 0:  ##rider in final and index % 2 == 0:
             print(rider)
-            #final.append(r)
+            ## Get index of rider in final array 
+            finalIndex = final.index(rider)
+            
+            ## Add results of this rider to final array
+            result = temp[index + 1][0]
+            final[finalIndex + 1].append(result)
+
 
         elif rider not in final and index % 2 == 0:
-            print("Elif Statement: ",rider, "    Index: ", index, "       Possible results???  ", temp[index + 1])
             final.append(rider)
-
             result = temp[index + 1][0]
-            #result = int(result)
             final.append([result])
-
 
 
         index +=1
@@ -87,6 +89,7 @@ def combineTable (temp, final):
 ## Driver code ##
 
 
+## Read in urls from text file fstream
 urls = ["https://racerxonline.com/results/2021/salt-lake-city-2/450sx", "https://racerxonline.com/results/2021/salt-lake-city-1/450sx"] ## race result urls
 
 finalResults = []

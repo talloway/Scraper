@@ -21,7 +21,7 @@ table_rows = table.find_all('tr') # Find table row
 for tr in table_rows:
     td = tr.find_all('td') # 'td' - table data cells
     row = [i.text for i in td]
-    print(row)
+    print(row(i)
 
 
 ##print(soup.find_all(string=["Knight", "Huntress", "Priest"]))
